@@ -61,7 +61,7 @@ function BlogCard(blog: Props) {
 					</div>
 					<Dot />
 					<div className='flex items-center gap-2'>
-						<Badge variant={'secondary'}>Machine learning</Badge>
+						<Badge className='text-center' variant={'secondary'}>Machine learning</Badge>
 					</div>
 				</div>
 			</div>
