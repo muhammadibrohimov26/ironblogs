@@ -1,17 +1,20 @@
 
 import BlogCard from '@/components/card/blog'
 import { blogs } from '@/constants'
+import { getBlogs } from '@/service/blog.service'
 import { Dot, Home } from 'lucide-react'
 import Link from 'next/link'
 
-function BlogsPage() {
+ async function BlogsPage() {
+	const blogs = await getBlogs()
+
 	return (
 		<div className='max-w-6xl mx-auto'>
 			<div className='relative min-h-[40vh] flex items-center justify-end flex-col'>
 				<h2 className='text-center text-4xl section-title font-creteRound'>
 					<span>Blogs</span>
 				</h2>
-
+		
 				<div className='flex gap-1 items-center mt-4'>
 					<Home className='w-4 h-4' />
 					<Link
