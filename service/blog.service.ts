@@ -32,6 +32,7 @@ export const getBlogs = async () =>{
             content {
               html
             }
+              slug
           
         }
       }

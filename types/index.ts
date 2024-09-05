@@ -11,6 +11,7 @@ export interface IBlog {
 	image: {url: string}
 	createdAt: string
 	content: {html: string}
+	slug: string
 }
 
 export interface IAuthor {
